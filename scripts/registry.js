@@ -1,0 +1,95 @@
+import { readdirSync, readFileSync, writeFileSync, statSync } from "fs";
+import { join } from "path";
+const OUTPUT_FILE = "./registry.json";
+const VALID_CATEGORIES = ["Skin", "Texture", "World", "Mod", "DLC"];
+const REQUIRED_FIELDS = ["id", "name", "author", "description", "category", "thumbnail", "zips", "version"];
+function validateMeta(meta, pkgDir) {
+  const errors = [];
+  for (const field of REQUIRED_FIELDS) {
+    if (meta[field] === undefined || meta[field] === null) {
+      errors.push(`missing required field: "${field}"`);
+    }
+  }
+
+  if (meta.id && meta.id !== pkgDir) {
+    errors.push(`id "${meta.id}" does not match folder name "${pkgDir}"`);
+  }
+
+  if (meta.category) {
+    const cats = Array.isArray(meta.category) ? meta.category : [meta.category];
+    for (const cat of cats) {
+      if (!VALID_CATEGORIES.includes(cat)) {
+        errors.push(`invalid category "${cat}", must be one of: ${VALID_CATEGORIES.join(", ")}`);
+      }
+    }
+  }
+
+  if (meta.version && !/^\d+\.\d+\.\d+$/.test(meta.version)) {
+    errors.push(`version "${meta.version}" is not valid semver (expected x.y.z)`);
+  }
+
+  return errors;
+}
+
+function stripJsonComments(str) {
+  return str.replace(/\/\/[^\n]*/g, "").replace(/\/\*[\s\S]*?\*\//g, "");
+}
+
+const packages = [];
+const allErrors = [];
+let entries;
+try {
+  entries = readdirSync(".");
+} catch {
+  console.error(`how the hell did you run me if the directory doesn't exist???`);
+  process.exit(1);
+}
+
+for (const entry of entries) {
+  const pkgPath = entry;
+  if (!statSync(pkgPath).isDirectory()) continue;
+  const metaPath = join(pkgPath, "meta.json");
+  let raw;
+  try {
+    raw = readFileSync(metaPath, "utf8");
+  } catch {
+    allErrors.push({ package: entry, errors: ["meta.json not found"] });
+    continue;
+  }
+
+  let meta;
+  try {
+    meta = JSON.parse(stripJsonComments(raw));
+  } catch (e) {
+    allErrors.push({ package: entry, errors: [`meta.json is invalid JSON: ${e.message}`] });
+    continue;
+  }
+
+  const errors = validateMeta(meta, entry);
+  if (errors.length > 0) {
+    allErrors.push({ package: entry, errors });
+    continue;
+  }
+
+  packages.push(meta);
+}
+
+if (allErrors.length > 0) {
+  console.error("Validation failed:\n");
+  for (const { package: pkg, errors } of allErrors) {
+    console.error(`  ${pkg}/meta.json`);
+    for (const err of errors) {
+      console.error(`    - ${err}`);
+    }
+  }
+  process.exit(1);
+}
+
+const registry = {
+  generated_at: new Date().toISOString(),
+  count: packages.length,
+  packages,
+};
+
+writeFileSync(OUTPUT_FILE, JSON.stringify(registry, null, 2));
+console.log(`registry.json generated with ${packages.length} package(s)`);
