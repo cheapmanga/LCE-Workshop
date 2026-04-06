@@ -2,11 +2,8 @@
   <img height="150" src="https://raw.githubusercontent.com/Emerald-Legacy-Launcher/Emerald-Legacy-Launcher/refs/heads/main/public/images/icon.png" alt="Emerald Legacy Launcher Logo">
   <h1>Emerald Legacy Workshop</h1>
   <p><strong>Central registry for community-driven content used by the Emerald Legacy Launcher.</strong></p>
-  
   <p>
-    <img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="Version">
-    <img src="https://img.shields.io/badge/license-GPL--3.0-green?style=flat-square" alt="License">
-    <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square" alt="Platforms">
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
   </p>
 </div>
 
