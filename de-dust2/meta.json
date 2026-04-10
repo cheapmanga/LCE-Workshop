@@ -8,7 +8,7 @@
   ],
   "thumbnail": "dust2hd.jpg",
   "zips": {
-    "Dust2.zip": "{DLCDir}"
+    "Dust2.zip": "{GameHDD}"
   },
   "version": "1.0.0"
 }
