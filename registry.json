@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T18:27:36.931Z",
+  "generated_at": "2026-04-10T18:30:06.689Z",
   "count": 7,
   "packages": [
     {
@@ -45,7 +45,7 @@
       "zips": {
         "Dust2.zip": "{GameHDD}"
       },
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "id": "faithful64",
