@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-12T11:47:19.993Z",
-  "count": 9,
+  "generated_at": "2026-04-12T16:07:24.186Z",
+  "count": 10,
   "packages": [
     {
       "id": "barebones",
@@ -81,7 +81,7 @@
       "id": "sphax-purebdcraft",
       "name": "Sphax Purebdcraft",
       "author": "ThePurpleDude",
-      "description": "This is Sphax Purebdcraft for LCE I have most of the the animated textures done working on the ui when I can and adding stuff that I find that it doesn't have yet.",
+      "description": "This is Sphax Purebdcraft for LCE TU 19 I have most of the the animated textures done working on the ui when I can and adding stuff that I find that it doesn't have yet.",
       "category": [
         "Texture"
       ],
@@ -118,6 +118,20 @@
       "thumbnail": "thumbnail.png",
       "zips": {
         "AriTouhouSkins.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "vintage-lce",
+      "name": "Vintage LCE",
+      "author": "ThePurpleDude",
+      "description": "I helped port this for someone this is vintage texture pack I did as much as I could its only for TU 19 I'll probably make a newer version for neo legacy when I can",
+      "category": [
+        "Texture"
+      ],
+      "thumbnail": "69a79ada89d9d957cccd1b57db6705e5788236aa_0.png",
+      "zips": {
+        "VintageLCE.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     },
