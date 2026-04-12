@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-12T16:07:54.924Z",
-  "count": 9,
+  "generated_at": "2026-04-12T17:01:04.818Z",
+  "count": 10,
   "packages": [
     {
       "id": "barebones",
@@ -74,6 +74,20 @@
       "thumbnail": "thumbnail.jpg",
       "zips": {
         "texture.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "skinpack",
+      "name": "SkyPack!",
+      "author": "SKYHIVIN",
+      "description": "An skinpack made by me!\nby SkyHeaven!\nan unemployed person. whom spent hours on this\nalso im SkyHeaven on the LCE discord too, if you have a skin or cape suggestoins, say it to me! i could add an custom skin and cape too!",
+      "category": [
+        "Skin"
+      ],
+      "thumbnail": "Untitled design.png",
+      "zips": {
+        "SkyPack.zip": "{DLCDir}Windows64media"
       },
       "version": "1.0.0"
     },
