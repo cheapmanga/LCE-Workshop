@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-12T16:07:24.186Z",
-  "count": 10,
+  "generated_at": "2026-04-12T16:07:54.924Z",
+  "count": 9,
   "packages": [
     {
       "id": "barebones",
@@ -132,20 +132,6 @@
       "thumbnail": "69a79ada89d9d957cccd1b57db6705e5788236aa_0.png",
       "zips": {
         "VintageLCE.zip": "{DLCDir}"
-      },
-      "version": "1.0.0"
-    },
-    {
-      "id": "xray-ultimate",
-      "name": "Xray",
-      "author": "Gloob7046",
-      "description": "You know. ",
-      "category": [
-        "Texture"
-      ],
-      "thumbnail": "xray.png",
-      "zips": {
-        "Xray.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     }
