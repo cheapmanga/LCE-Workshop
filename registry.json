@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T17:02:55.817Z",
+  "generated_at": "2026-04-12T17:03:37.480Z",
   "count": 10,
   "packages": [
     {
@@ -98,7 +98,8 @@
       "author": "ThePurpleDude",
       "description": "This is Sphax Purebdcraft for LCE TU 19 I have most of the the animated textures done working on the ui when I can and adding stuff that I find that it doesn't have yet.",
       "category": [
-        "Texture"
+        "Texture",
+        "DLC"
       ],
       "thumbnail": "comparison.png",
       "zips": {
