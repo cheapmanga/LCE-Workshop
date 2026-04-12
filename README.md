@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="150" alt="Emerald Workshop" src="https://github.com/user-attachments/assets/96e71595-a53d-46d3-bf94-dc2057b0e4dc" />
+  <img width="150" alt="Emerald Workshop" src="https://github.com/user-attachments/assets/ab30c4d9-997b-4439-b9af-4540d28b8dd0" />
   <h1>Emerald Legacy Workshop</h1>
   <p><strong>Central registry for community-driven content used by the Emerald Legacy Launcher.</strong></p>
   <p>
