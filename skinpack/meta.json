@@ -9,7 +9,7 @@
   ],
   "thumbnail": "Untitled design.png",
   "zips": {
-    "SkyPack.zip": "{DLCDir}Windows64media"
+    "SkyPack.zip": "{DLCDir}"
   },
   "version": "1.0.0"
 }
