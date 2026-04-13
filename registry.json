@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-12T17:24:48.099Z",
-  "count": 11,
+  "generated_at": "2026-04-13T16:42:30.899Z",
+  "count": 12,
   "packages": [
     {
       "id": "barebones",
@@ -103,6 +103,21 @@
       "thumbnail": "Untitled design.png",
       "zips": {
         "SkyPack.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "sphax-purbdcraft-neo",
+      "name": "Sphax Purebdcraft NeoLegacy",
+      "author": "ThePurpleDude",
+      "description": "This is a version of Sphax Purebdcraft for the NeoLegacy version of the game I'll be updating this texture pack as the TU versions get updated",
+      "category": [
+        "Texture",
+        "DLC"
+      ],
+      "thumbnail": "icon.png",
+      "zips": {
+        "SphaxLCE Purebdcraft.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     },
