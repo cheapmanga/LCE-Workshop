@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-17T18:00:24.854Z",
-  "count": 16,
+  "generated_at": "2026-04-18T08:54:58.152Z",
+  "count": 17,
   "packages": [
     {
       "id": "barebones",
@@ -127,7 +127,7 @@
       "zips": {
         "texture.zip": "{DLCDir}"
       },
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "new-legacy",
@@ -221,6 +221,22 @@
       "thumbnail": "thumbnail.png",
       "zips": {
         "tadc.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "tetovariants",
+      "name": "Teto Variants",
+      "author": "dydymiku_",
+      "description": "A 3D Kasane Teto Skin Pack that's taking all the differents variations of our sweet, lovely baguette lover!",
+      "extended_description": "",
+      "category": [
+        "Skin",
+        "DLC"
+      ],
+      "thumbnail": "thumbnail.jpg",
+      "zips": {
+        "texture.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     },
