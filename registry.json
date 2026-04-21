@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-20T12:26:14.884Z",
-  "count": 18,
+  "generated_at": "2026-04-21T07:02:40.012Z",
+  "count": 19,
   "packages": [
     {
       "id": "barebones",
@@ -112,6 +112,22 @@
         "FNAFSkinPack.zip": "{DLCDir}"
       },
       "version": "1.0.0"
+    },
+    {
+      "id": "gres-skinpack",
+      "name": "Gre's Skin Pack",
+      "author": "GreGrenier",
+      "description": "Skin's I've made ! It's one of the first skin pack that was created after the leak !\nIt features skins from South Park, Mario and the rock band \"Car Seat Headrest\" !",
+      "extended_description": "",
+      "category": [
+        "Skin",
+        "DLC"
+      ],
+      "thumbnail": "Capture d'écran 2026-04-20 211014.png",
+      "zips": {
+        "Gre's Skin 1.1.zip": "{DLCDir}"
+      },
+      "version": "1.0.1"
     },
     {
       "id": "hedgecraft-krabozaki",
