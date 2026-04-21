@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-21T07:02:40.012Z",
-  "count": 19,
+  "generated_at": "2026-04-21T14:16:29.297Z",
+  "count": 20,
   "packages": [
     {
       "id": "barebones",
@@ -144,6 +144,22 @@
         "New HEDGECRAFT [Krabozaki] - LCE.zip": "{DLCDir}"
       },
       "version": "2.0.3"
+    },
+    {
+      "id": "jojoskins",
+      "name": "Jotaro vs Dio skinpack",
+      "author": "zapamitany123",
+      "description": "Your favourite bizzare characters are in Minecraft! Use this DLC for having golden expirience. (ge not included)",
+      "extended_description": "",
+      "category": [
+        "Skin",
+        "DLC"
+      ],
+      "thumbnail": "jojodio.png",
+      "zips": {
+        "jotaro vs dio skins.zip": "{DLCDir}"
+      },
+      "version": "1.0.1"
     },
     {
       "id": "mikusmodules",
