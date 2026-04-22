@@ -1,7 +1,23 @@
 {
-  "generated_at": "2026-04-21T19:42:48.838Z",
-  "count": 20,
+  "generated_at": "2026-04-22T11:48:36.766Z",
+  "count": 21,
   "packages": [
+    {
+      "id": "2010s-indie-horror",
+      "name": "2010s Indie Horror Skin Pack",
+      "author": "JosheryLemon",
+      "description": "A skin pack I made with a bunch of characters from various 2010s indie horror things.",
+      "extended_description": "",
+      "category": [
+        "Skin",
+        "DLC"
+      ],
+      "thumbnail": "skinpackthumbnail.png",
+      "zips": {
+        "2010sIndieHorror.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
     {
       "id": "barebones",
       "name": "Barebones",
