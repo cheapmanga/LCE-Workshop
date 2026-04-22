@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-22T11:48:36.766Z",
-  "count": 21,
+  "generated_at": "2026-04-22T11:51:23.452Z",
+  "count": 22,
   "packages": [
     {
       "id": "2010s-indie-horror",
@@ -206,6 +206,22 @@
       "thumbnail": "560435376-175ea778-ca16-4cd6-b8c9-48ed51c672dd.png",
       "zips": {
         "New.Legacy.v4.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "ocd-texture-pack",
+      "name": "oCd Texture Pack",
+      "author": "IveBeenAl0ne",
+      "description": "Got OCD? Get oCd Pack!!",
+      "extended_description": "",
+      "category": [
+        "Texture",
+        "DLC"
+      ],
+      "thumbnail": "banner.png",
+      "zips": {
+        "oCd_Texture_Pack.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     },
