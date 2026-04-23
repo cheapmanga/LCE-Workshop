@@ -1,11 +1,10 @@
 import { readdirSync, readFileSync, writeFileSync, statSync } from "fs";
 import { join } from "path";
-
+import { parse } from "jsonc-parser";
 const OUTPUT_FILE = "./registry.json";
 const VALID_CATEGORIES = ["Skin", "Texture", "World", "Mod", "DLC"];
 const REQUIRED_FIELDS = ["id", "name", "author", "description", "extended_description", "category", "thumbnail", "zips", "version"];
 const IGNORED_DIRS = [".git", ".github", "scripts"];
-
 function validateMeta(meta, pkgDir) {
   const errors = [];
   for (const field of REQUIRED_FIELDS) {
@@ -33,11 +32,6 @@ function validateMeta(meta, pkgDir) {
 
   return errors;
 }
-
-function stripJsonComments(str) {
-  return str.replace(/\/\/[^\n]*/g, "").replace(/\/\*[\s\S]*?\*\//g, "");
-}
-
 const packages = [];
 const allErrors = [];
 let entries;
@@ -63,7 +57,7 @@ for (const entry of entries) {
 
   let meta;
   try {
-    meta = JSON.parse(stripJsonComments(raw));
+    meta = parse(raw);
   } catch (e) {
     allErrors.push({ package: entry, errors: [`meta.json is invalid JSON: ${e.message}`] });
     continue;
