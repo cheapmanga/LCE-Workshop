@@ -4,7 +4,7 @@ import { parse } from "jsonc-parser";
 const OUTPUT_FILE = "./registry.json";
 const VALID_CATEGORIES = ["Skin", "Texture", "World", "Mod", "DLC"];
 const REQUIRED_FIELDS = ["id", "name", "author", "description", "extended_description", "category", "thumbnail", "zips", "version"];
-const IGNORED_DIRS = [".git", ".github", "scripts"];
+const IGNORED_DIRS = [".git", ".github", "scripts", "node_modules"];
 function validateMeta(meta, pkgDir) {
   const errors = [];
   for (const field of REQUIRED_FIELDS) {
