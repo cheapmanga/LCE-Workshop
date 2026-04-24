@@ -6,6 +6,7 @@
   "extended_description": "# Test",
   "category": ["Modpack"], // Category
   "thumbnail": "thumbnail.png", // Thumbnail filename
+  "logo": "logo.png",
   "url": "https://example.com/test.zip",
   "version": "1.0.0"
 }
