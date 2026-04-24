@@ -1,12 +1,12 @@
 {
   "id": "test", // ID
-  "name": "Test Version", // Name
+  "name": "Aether Mod", // Name
   "author": "neoapps-dev",
   "description": "Test", // Description
   "extended_description": "# Test",
-  "category": ["Modpack"], // Category
+  "category": ["Modpack", "Random"], // Category
   "thumbnail": "thumbnail.png", // Thumbnail filename
   "logo": "logo.png",
-  "url": "https://example.com/test.zip",
+  "url": "https://download2274.mediafire.com/m7zn9cju38sgEkvbdiBKjwVkfwYkJe2ZzuMaSx3pfQnm06BTdJpT6VSn5N6UmU-5EdLe9-9xakmedtsYe5hRP_9NNVTxVKY6st6quEzniR45K2hpT3FDWLVmOy986SU--Xa_kCaXODLj8Uo99dYXsQIuGUG0e4I1ztPbAFDnDmZJl1rE/o8oqtiqa43bchhp/Release.rar",
   "version": "1.0.0"
 }
