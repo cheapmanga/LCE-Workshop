@@ -160,4 +160,4 @@ const versions = {
 writeFileSync(OUTPUT_FILE, JSON.stringify(registry, null, 2));
 console.log(`registry.json generated with ${packages.length} package(s)`);
 writeFileSync(OUTPUT_FILE2, JSON.stringify(versions, null, 2));
-console.log(`versions.json generated with ${packages.length} version(s)`);
+console.log(`versions.json generated with ${versionlist.length} version(s)`);
