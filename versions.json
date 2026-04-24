@@ -1,19 +1,20 @@
 {
-  "generated_at": "2026-04-24T14:12:12.426Z",
+  "generated_at": "2026-04-24T14:45:36.687Z",
   "count": 1,
   "versionlist": [
     {
       "id": "test",
-      "name": "Test Version",
+      "name": "Aether Mod",
       "author": "neoapps-dev",
       "description": "Test",
       "extended_description": "# Test",
       "category": [
-        "Modpack"
+        "Modpack",
+        "Random"
       ],
       "thumbnail": "thumbnail.png",
       "logo": "logo.png",
-      "url": "https://example.com/test.zip",
+      "url": "https://download2274.mediafire.com/m7zn9cju38sgEkvbdiBKjwVkfwYkJe2ZzuMaSx3pfQnm06BTdJpT6VSn5N6UmU-5EdLe9-9xakmedtsYe5hRP_9NNVTxVKY6st6quEzniR45K2hpT3FDWLVmOy986SU--Xa_kCaXODLj8Uo99dYXsQIuGUG0e4I1ztPbAFDnDmZJl1rE/o8oqtiqa43bchhp/Release.rar",
       "version": "1.0.0"
     }
   ]
