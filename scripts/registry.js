@@ -5,6 +5,7 @@ const OUTPUT_FILE = "./registry.json";
 const OUTPUT_FILE2 = "./versions.json"; //neo: version listing lmao
 const VALID_CATEGORIES = ["Skin", "Texture", "World", "Mod", "DLC"];
 const REQUIRED_FIELDS = ["id", "name", "author", "description", "extended_description", "category", "thumbnail", "zips", "version"];
+const REQUIRED_FIELDS2 = ["id", "name", "author", "description", "extended_description", "thumbnail", "url", "version", "logo"];
 const IGNORED_DIRS = [".git", ".github", "scripts", "node_modules", ".00versions"];
 function validateMeta(meta, pkgDir) {
   const errors = [];
@@ -33,6 +34,35 @@ function validateMeta(meta, pkgDir) {
 
   return errors;
 }
+
+function validateVersionMeta(meta, pkgDir) {
+  const errors = [];
+  for (const field of REQUIRED_FIELDS2) {
+    if (meta[field] === undefined || meta[field] === null) {
+      errors.push(`missing required field: "${field}"`);
+    }
+  }
+
+  if (meta.id && meta.id !== pkgDir) {
+    errors.push(`id "${meta.id}" does not match folder name "${pkgDir}"`);
+  }
+
+  if (meta.category) {
+    const cats = Array.isArray(meta.category) ? meta.category : [meta.category];
+    for (const cat of cats) {
+      if (!VALID_CATEGORIES.includes(cat)) {
+        errors.push(`invalid category "${cat}", must be one of: ${VALID_CATEGORIES.join(", ")}`);
+      }
+    }
+  }
+
+  if (meta.version && !/^\d+\.\d+\.\d+$/.test(meta.version)) {
+    errors.push(`version "${meta.version}" is not valid semver (expected x.y.z)`);
+  }
+
+  return errors;
+}
+
 const packages = [];
 const versionlist = [];
 const allErrors = [];
@@ -94,7 +124,7 @@ for (const entry of entries2) {
     continue;
   }
 
-  const errors = validateMeta(meta, entry);
+  const errors = validateVersionMeta(meta, entry);
   if (errors.length > 0) {
     allErrors.push({ package: entry, errors });
     continue;
