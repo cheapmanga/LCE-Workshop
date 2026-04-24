@@ -2,9 +2,10 @@ import { readdirSync, readFileSync, writeFileSync, statSync } from "fs";
 import { join } from "path";
 import { parse } from "jsonc-parser";
 const OUTPUT_FILE = "./registry.json";
+const OUTPUT_FILE2 = "./versions.json"; //neo: version listing lmao
 const VALID_CATEGORIES = ["Skin", "Texture", "World", "Mod", "DLC"];
 const REQUIRED_FIELDS = ["id", "name", "author", "description", "extended_description", "category", "thumbnail", "zips", "version"];
-const IGNORED_DIRS = [".git", ".github", "scripts", "node_modules"];
+const IGNORED_DIRS = [".git", ".github", "scripts", "node_modules", ".00versions"];
 function validateMeta(meta, pkgDir) {
   const errors = [];
   for (const field of REQUIRED_FIELDS) {
@@ -33,10 +34,13 @@ function validateMeta(meta, pkgDir) {
   return errors;
 }
 const packages = [];
+const versionlist = [];
 const allErrors = [];
 let entries;
+let entries2;
 try {
   entries = readdirSync(".");
+  entries2 = readdirSync(".00versions"); //neo: dont ask about the name.
 } catch {
   console.error(`how the hell did you run me if the directory doesn't exist???`);
   process.exit(1);
@@ -72,6 +76,32 @@ for (const entry of entries) {
   packages.push(meta);
 }
 
+for (const entry of entries2) {
+  if (!statSync(entry).isDirectory()) continue;
+  const metaPath = join(pkgPath, "meta.json");
+  let raw;
+  try {
+    raw = readFileSync(metaPath, "utf8");
+  } catch {
+    allErrors.push({ package: entry, errors: ["meta.json not found (in version)"] });
+    continue;
+  }
+  let meta;
+  try {
+    meta = parse(raw);
+  } catch (e) {
+    allErrors.push({ package: entry, errors: [`meta.json is invalid JSON: ${e.message} (in version)`] });
+    continue;
+  }
+
+  const errors = validateMeta(meta, entry);
+  if (errors.length > 0) {
+    allErrors.push({ package: entry, errors });
+    continue;
+  }
+
+  versionlist.push(meta);
+}
 if (allErrors.length > 0) {
   console.error("Validation failed:\n");
   for (const { package: pkg, errors } of allErrors) {
@@ -89,5 +119,13 @@ const registry = {
   packages,
 };
 
+const versions = {
+  generated_at: new Date().toISOString(),
+  count: versionlist.length,
+  versionlist,
+};
+
 writeFileSync(OUTPUT_FILE, JSON.stringify(registry, null, 2));
 console.log(`registry.json generated with ${packages.length} package(s)`);
+writeFileSync(OUTPUT_FILE2, JSON.stringify(versions, null, 2));
+console.log(`versions.json generated with ${packages.length} version(s)`);
