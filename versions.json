@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T20:52:27.924Z",
+  "generated_at": "2026-04-24T21:14:16.987Z",
   "count": 2,
   "versionlist": [
     {
@@ -19,9 +19,9 @@
     {
       "id": "test",
       "name": "Aether Mod",
-      "author": "neoapps-dev",
-      "description": "Test",
-      "extended_description": "# Test",
+      "author": "aRockefeler",
+      "description": "Aether Mod Port",
+      "extended_description": "# Aether Mod for LCE!\nSoon this mod will be fully ported and available On NeoLegacy as a mod\nThis version is unstable\nyou may experience crashes or the game may slow down at times.",
       "category": [
         "Modpack",
         "Random"
