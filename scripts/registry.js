@@ -108,7 +108,7 @@ for (const entry of entries) {
 }
 
 for (const entry of entries2) {
-  const pkgPath = ".00versions/"+entry
+  const pkgPath = ".00versions/"+entry;
   if (!statSync(pkgPath).isDirectory()) continue;
   const metaPath = join(pkgPath, "meta.json");
   let raw;
