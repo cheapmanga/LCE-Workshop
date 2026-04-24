@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-04-24T14:12:12.426Z",
+  "count": 1,
+  "versionlist": [
+    {
+      "id": "test",
+      "name": "Test Version",
+      "author": "neoapps-dev",
+      "description": "Test",
+      "extended_description": "# Test",
+      "category": [
+        "Modpack"
+      ],
+      "thumbnail": "thumbnail.png",
+      "logo": "logo.png",
+      "url": "https://example.com/test.zip",
+      "version": "1.0.0"
+    }
+  ]
+}
