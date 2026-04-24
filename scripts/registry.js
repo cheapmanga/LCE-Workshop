@@ -4,6 +4,7 @@ import { parse } from "jsonc-parser";
 const OUTPUT_FILE = "./registry.json";
 const OUTPUT_FILE2 = "./versions.json"; //neo: version listing lmao
 const VALID_CATEGORIES = ["Skin", "Texture", "World", "Mod", "DLC"];
+const VALID_CATEGORIES2 = ["Vanilla", "Modded", "Modpack", "Fork", "Random"];
 const REQUIRED_FIELDS = ["id", "name", "author", "description", "extended_description", "category", "thumbnail", "zips", "version"];
 const REQUIRED_FIELDS2 = ["id", "name", "author", "description", "extended_description", "thumbnail", "url", "version", "logo"];
 const IGNORED_DIRS = [".git", ".github", "scripts", "node_modules", ".00versions"];
@@ -50,8 +51,8 @@ function validateVersionMeta(meta, pkgDir) {
   if (meta.category) {
     const cats = Array.isArray(meta.category) ? meta.category : [meta.category];
     for (const cat of cats) {
-      if (!VALID_CATEGORIES.includes(cat)) {
-        errors.push(`invalid category "${cat}", must be one of: ${VALID_CATEGORIES.join(", ")}`);
+      if (!VALID_CATEGORIES2.includes(cat)) {
+        errors.push(`invalid category "${cat}", must be one of: ${VALID_CATEGORIES2.join(", ")}`);
       }
     }
   }
@@ -107,7 +108,8 @@ for (const entry of entries) {
 }
 
 for (const entry of entries2) {
-  if (!statSync(entry).isDirectory()) continue;
+  const pkgPath = ".00versions/"+entry
+  if (!statSync(pkgPath).isDirectory()) continue;
   const metaPath = join(pkgPath, "meta.json");
   let raw;
   try {
