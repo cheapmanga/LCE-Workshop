@@ -1,1 +1,11 @@
-{}
+{
+  "id": "test", // ID
+  "name": "Test Version", // Name
+  "author": "neoapps-dev",
+  "description": "Test", // Description
+  "extended_description": "# Test",
+  "category": ["Modpack"], // Category
+  "thumbnail": "thumbnail.png", // Thumbnail filename
+  "url": "https://example.com/test.zip",
+  "version": "1.0.0"
+}
