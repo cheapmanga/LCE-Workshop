@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T12:36:15.360Z",
+  "generated_at": "2026-04-26T12:36:42.247Z",
   "count": 28,
   "packages": [
     {
@@ -440,7 +440,7 @@
       ],
       "thumbnail": "Xbox360.png",
       "zips": {
-        "Xbox360.zip": "{MediaDir}"
+        "Xbox360.zip": "Common/Media"
       },
       "version": "1.0.0"
     }
