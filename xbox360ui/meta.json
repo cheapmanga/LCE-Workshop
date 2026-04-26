@@ -9,7 +9,7 @@
   ],
   "thumbnail": "Xbox360.png",
   "zips": {
-    "Xbox360.zip": "{MediaDir}"
+    "Xbox360.zip": "Common/Media"
   },
   "version": "1.0.0"
 }
