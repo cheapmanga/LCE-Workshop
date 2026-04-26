@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T12:35:49.562Z",
+  "generated_at": "2026-04-26T12:36:15.360Z",
   "count": 28,
   "packages": [
     {
@@ -220,7 +220,7 @@
       ],
       "thumbnail": "PC 2.png",
       "zips": {
-        "PC.zip": "{MediaDir}"
+        "PC.zip": "Common/Media"
       },
       "version": "1.0.0"
     },
