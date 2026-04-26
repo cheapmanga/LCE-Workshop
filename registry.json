@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T12:32:01.696Z",
+  "generated_at": "2026-04-26T12:35:49.562Z",
   "count": 28,
   "packages": [
     {
@@ -283,7 +283,7 @@
       ],
       "thumbnail": "PlayStation.png",
       "zips": {
-        "PS3.zip": "{MediaDir}"
+        "PS3.zip": "Common/Media"
       },
       "version": "1.0.0"
     },
