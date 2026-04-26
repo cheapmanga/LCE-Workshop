@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T12:29:32.098Z",
-  "count": 26,
+  "generated_at": "2026-04-26T12:30:29.881Z",
+  "count": 27,
   "packages": [
     {
       "id": "2010s-indie-horror",
@@ -411,6 +411,21 @@
       "thumbnail": "69a79ada89d9d957cccd1b57db6705e5788236aa_0.png",
       "zips": {
         "VintageLCE.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "xbox360ui",
+      "name": "Xbox360 UI",
+      "author": "SuperCatElvis",
+      "description": "Full Xbox 360 controller UI, faithfully restored.",
+      "extended_description": "# DO NOT USE ON NEOLEGACY",
+      "category": [
+        "Mod"
+      ],
+      "thumbnail": "Xbox360.png",
+      "zips": {
+        "Xbox360.zip": "{MediaDir}"
       },
       "version": "1.0.0"
     }
