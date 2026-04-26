@@ -9,7 +9,7 @@
   ],
   "thumbnail": "PC 2.png",
   "zips": {
-    "PC.zip": "{MediaDir}"
+    "PC.zip": "Common/Media"
   },
   "version": "1.0.0"
 }
