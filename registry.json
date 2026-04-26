@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26T12:36:42.247Z",
-  "count": 28,
+  "generated_at": "2026-04-26T12:58:14.875Z",
+  "count": 29,
   "packages": [
     {
       "id": "2010s-indie-horror",
@@ -362,6 +362,22 @@
       "thumbnail": "spongebob-squarepants.png",
       "zips": {
         "Spongebob-Squarepants.zip": "{GameHDD}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "story-mode-skin-pack",
+      "name": "Story Mode Skin Pack",
+      "author": "mineguy-guy",
+      "description": "Create your own adventure with this skin pack featuring your favorite characters from Minecraft: Story Mode. All the Jesse, Olivia, Axel, Petra skins and many more are included!\n(Not all of them were ported sorry)",
+      "extended_description": "",
+      "category": [
+        "Skin",
+        "DLC"
+      ],
+      "thumbnail": "MinecraftStoryModeSP.png",
+      "zips": {
+        "Story Mode Skin Pack.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     },
