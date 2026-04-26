@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T21:14:16.987Z",
+  "generated_at": "2026-04-26T09:52:31.203Z",
   "count": 25,
   "packages": [
     {
@@ -171,11 +171,11 @@
         "Skin",
         "DLC"
       ],
-      "thumbnail": "Снимок экрана 2026-04-14 132017.png",
+      "thumbnail": "Krab Game Online.png",
       "zips": {
         "New HEDGECRAFT [Krabozaki] - LCE.zip": "{DLCDir}"
       },
-      "version": "2.0.3"
+      "version": "2.0.4"
     },
     {
       "id": "joesspecialskins",
