@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-27T12:00:34.916Z",
-  "count": 31,
+  "generated_at": "2026-04-27T21:29:31.746Z",
+  "count": 32,
   "packages": [
     {
       "id": "2010s-indie-horror",
@@ -347,6 +347,22 @@
       "thumbnail": "2026-04-17_18.11.33.png",
       "zips": {
         "SkyPack.zip": "{GameHDD}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "sourceskinpack",
+      "name": "Source Skin Pack",
+      "author": "Dllie",
+      "description": "Part of the Source Mash Up\nlook for lce_flatgrass",
+      "extended_description": "",
+      "category": [
+        "Skin",
+        "DLC"
+      ],
+      "thumbnail": "InShot_20260427_152800218.jpg",
+      "zips": {
+        "Source Skin Pack.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     },
