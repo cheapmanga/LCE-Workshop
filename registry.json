@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-27T11:57:16.276Z",
-  "count": 29,
+  "generated_at": "2026-04-27T11:59:42.115Z",
+  "count": 30,
   "packages": [
     {
       "id": "2010s-indie-horror",
@@ -48,6 +48,22 @@
       "thumbnail": "thumbnail.png",
       "zips": {
         "mashup.zip": "{DLCDir}"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "id": "beansdalekplus",
+      "name": "Bean's Dalek Plus",
+      "author": "SuperCatElvis",
+      "description": "Skins based on Bean's Dalek Plus a bedrock Addon",
+      "extended_description": "",
+      "category": [
+        "Skin",
+        "DLC"
+      ],
+      "thumbnail": "2026-04-27_11.07.13.png",
+      "zips": {
+        "Bean's Dalek Plus.zip": "{DLCDir}"
       },
       "version": "1.0.0"
     },
