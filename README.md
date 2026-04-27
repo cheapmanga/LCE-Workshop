@@ -1,7 +1,7 @@
 <div align="center">
   <img width="150" alt="Emerald Workshop" src="https://github.com/user-attachments/assets/ab30c4d9-997b-4439-b9af-4540d28b8dd0" />
-  <h1>Emerald Legacy Workshop</h1>
-  <p><strong>Central registry for community-driven content used by the Emerald Legacy Launcher.</strong></p>
+  <h1>LCE Emerald Workshop</h1>
+  <p><strong>Central registry for community-driven content used by the LCE Emerald Launcher.</strong></p>
   <p>
     <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
   </p>
