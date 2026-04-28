@@ -1,0 +1,16 @@
+{
+  "id": "deadmau5",
+  "name": "deadmau5 Skins",
+  "author": "CodeGuyEli",
+  "description": "deadmau5's skin in multiple colors",
+  "extended_description": "",
+  "category": [
+    "Skin",
+    "DLC"
+  ],
+  "thumbnail": "thumbnail.png",
+  "zips": {
+    "deadmau5.zip": "{DLCDir}"
+  },
+  "version": "1.0.0"
+}
