@@ -9,7 +9,7 @@
   ],
   "thumbnail": "CS.PNG",
   "zips": {
-    "Castle_Siege_1.zip": "{DLCDir}"
+    "Castle_Siege_1.zip": "{GameHDD}"
   },
   "version": "1.0.0"
 }
